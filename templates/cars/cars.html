@@ -84,77 +84,9 @@
                 </p>
             </div>
         </div>
-        <div class="active-model-carusel">
-            <div class="row align-items-center single-model item">
-                <div class="col-lg-6 model-left">
-                    <div class="title justify-content-between d-flex">
-                        <h4 class="mt-20">Ferrari 812 Superfast</h4>
-                        <h2>₽149 000<span>/день</span></h2>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <p>
-                        Capacity : 02 Person <br>
-                        Doors : 02 <br>
-                        Air Condition : Dual Zone <br>
-                        Transmission : Automatic
-                    </p>
-                    <a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
-                </div>
-                <div class="col-lg-6 model-right">
-                    <img class="img-fluid" src="{% static 'img/812superfast.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row align-items-center single-model item">
-                <div class="col-lg-6 model-left">
-                    <div class="title justify-content-between d-flex">
-                        <h4 class="mt-20">Audi 3000 msi</h4>
-                        <h2>$149<span>/day</span></h2>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <p>
-                        Capacity : 04 Person <br>
-                        Doors : 04 <br>
-                        Air Condition : Dual Zone <br>
-                        Transmission : Automatic
-                    </p>
-                    <a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
-                </div>
-                <div class="col-lg-6 model-right">
-                    <img class="img-fluid" src="{% static 'img/car.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row align-items-center single-model item">
-                <div class="col-lg-6 model-left">
-                    <div class="title justify-content-between d-flex">
-                        <h4 class="mt-20">Audi 3000 msi</h4>
-                        <h2>$149<span>/day</span></h2>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <p>
-                        Capacity : 04 Person <br>
-                        Doors : 04 <br>
-                        Air Condition : Dual Zone <br>
-                        Transmission : Automatic
-                    </p>
-                    <a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
-                </div>
-                <div class="col-lg-6 model-right">
-                    <img class="img-fluid" src="{% static 'img/car.jpg' %}" alt="">
-                </div>
-            </div>
-        </div>
         {% verbatim %}
         <div class="active-model-carusel" id="cars">
-            <div class="row align-items-center single-model item" v-for="car in cars">
+            <div class="row align-items-center single-model item" v-for="car in cars" style="margin-bottom: 10px">
                 <div class="col-lg-6 model-left">
                     <div class="title justify-content-between d-flex">
                         <h4 class="mt-20">{{ car.mark }} {{ car.model }}</h4>
